@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <header>
+    <header class="header nav-transparent">
       <a href="#" class="logo">Logo</a>
       <nav>
         <ul>
@@ -48,7 +48,7 @@
     <section class="mycontent" id="mycontent">
       <section class="sec-01">
         <div class="container">
-          <p>Get To Know Me</p>
+          <p class="small_header">Get To Know Me</p>
           <h2 class="main-title">A Bit About Me</h2>
 
           <div class="content">
@@ -58,11 +58,13 @@
 
             <div class="text-box">
               <h3>Hi there!</h3>
-              <p> I'm Yuzana. I am a Web Developer based in Seoul, South Korea, who is passionate about buiding beautiful and creative websites. My interests include Coding, Machine Learning, Artificial Intelligence and Computer Vision. I am currently undergraduate student working towards Bachelor of Computer Science and Engineering at Ewha Womans University.</p>
+              <p> I'm Yuzana. I am a Web Developer based in Seoul, South Korea, who is passionate about buiding beautiful and creative websites. My interests include Coding, Machine Learning, Artificial Intelligence and Computer Vision.<!-- I am currently undergraduate student working towards Bachelor of Computer Science and Engineering at Ewha Womans University.--></p>
             </div>
           </div>
-          <a href="asset/CV.pdf" class="btn hire-me" target="_blank">
-            Download CV</a>
+          <div class="resume-btn">
+            <a href="asset/CV.pdf" class="btn hire-me" target="_blank">
+              Download CV</a>
+          </div>
 
           <div class="media-icons">
             <a href="https://github.com/yuzanawinnnn?tab=repositories" class="icon"><i class="fab fa-github"></i></a>
@@ -87,7 +89,7 @@
     <!--------------------------------PROJECTS SECTION-------------------------------------->
     <section class="sec-05" id="myworks">
       <div class="container">
-        <h3 class="section-title">Project Showcase</h3>
+        <h3 class="main-title">Project Showcase</h3>
         <p class="small_header">Browse My Recent Projects</p>
         <div class="content">
           <div class="project-infos">
@@ -341,7 +343,7 @@
     <!--------------------------------EXPERIENCE SECTION-------------------------------------->
     <section class="sec-06 section" id="myexp">
       <div class="container">
-        <p>Work Experience</p>
+        <p class="small_header">Work Experience</p>
         <h3 class="section-title">Experience</h3>
         <div class="row">
           <div class="education padd-15">
@@ -349,7 +351,7 @@
               <div class="timeline-box padd-15">
                 <div class="timeline shadow-dark">
                   <!--===== timeline item ====== --->
-                  <div class="timeline-item">
+                  <!--<div class="timeline-item">
                     <div class="circle-dot"></div>
                     <h3 class="timeline-date">
                       <i class="fa fa-calendar"> Nov 2019 - Mar 2020</i>
@@ -363,7 +365,7 @@ knowledge. Also worked on creating bite-sized lessons, fun coding quizzes and ex
 and efficiently helped them build their basic foundation in Programming. Had the opportunity to
 strengthen my underlying Python knowledge.
                     </p>
-                  </div>
+                  </div>-->
                   
                   <!--===== timeline item ====== --->
                   <div class="timeline-item">
@@ -394,7 +396,7 @@ implemented Products and troubleshooted technical issues for more than 70 custom
                     </p>
                   </div>
                   <!--===== timeline item === --->
-                  <div class="timeline-item">
+                  <!--<div class="timeline-item">
                     <div class="circle-dot"></div>
                     <h3 class="timeline-date">
                       <i class="fa fa-calendar"> Feb 2023- Jan 2024</i>
@@ -408,7 +410,9 @@ implemented Products and troubleshooted technical issues for more than 70 custom
                   hackathons for kids to introduce Problem-solving and Creative Thinking to the young generation in my
                   country. Mainly used Virtual EV3 platform of CS-STEM Network by Carnegie Mellon Robotics Academy.
                     </p>
-                  </div>
+                  </div>-->
+
+
                 </div>
               </div>
             </div>
@@ -537,6 +541,8 @@ implemented Products and troubleshooted technical issues for more than 70 custom
 
       //hide and display home info on scrolldown and up
       window.onscroll = function () {
+
+  
         if (
           document.body.scrollTop > 500 ||
           document.documentElement.scrollTop > 500
@@ -575,6 +581,8 @@ implemented Products and troubleshooted technical issues for more than 70 custom
       });
       ScrollReveal().reveal(".sec-04 .row", { delay: 700, origin: "top" });
       ScrollReveal().reveal('.sec-05 .proj1, .sec-03 .image', { delay: 500, origin: 'top' });
+      
+      
     </script>
   </body>
 </html>
