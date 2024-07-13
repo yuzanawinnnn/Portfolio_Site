@@ -18,14 +18,18 @@ body{
 header{
   z-index: 99;
   position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 30px 100px;
+  padding: 10px 100px;
   display: flex;
   justify-content: space-between;
   align-items: center; 
+  background-color:#0A0106;
+  opacity: 0.9;
 }
+
 
 header .logo{
   font-size: 2em;
@@ -50,7 +54,7 @@ header nav a{
   font-weight: 500;
   text-decoration: none;
   margin-left: 20px;
-  padding: 5px 16px;
+  padding: 2px 16px;
   border-radius: 10px;
   transition: 0.3s;
   transition-property: background, color;
@@ -102,6 +106,14 @@ header nav a:hover{
       transform: translateY(10px);
   }
 }*/
+
+
+/*
+sec-01 : about me
+sec-05 : projects
+sec-04 : skills
+sec-06 : experience
+*/
 
 .home img{
   position: absolute;
@@ -257,19 +269,6 @@ a#scroll-btn:before{
   }
 }
 
-/*=================== HOME SECTION ===================*/
-
-
-
-
-
-/*
-sec-01 : about me
-sec-05 : projects
-sec-04 : skills
-sec-06 : experience
-*/
-
 .row{
   display: flex;
   flex-wrap: wrap;
@@ -282,34 +281,48 @@ sec-06 : experience
   padding-right: 15px;
 }
 
-.btn{
-  font-size: 16px;
-  font-weight: 500;
-  padding: 12px 35px;
-  color: white;
-  border-radius:40px;
-  display: inline-block;
-  white-space: nowrap;
-  border: none;
-  background: pink;
-  transition: all 0.3s ease;
-  text-decoration: none;
-}
+/*=================== HOME SECTION ===================*/
+
+
 
 
 
 
 
 /*=================== ABOUT ME SECTION ===================*/
+
+
+.sec-01 .btn{
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 35px;
+  color: white;
+  border-radius:10px;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  background: pink;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #6b5b5b;
+}
+.sec-01 .btn:hover {
+  background: #e8f0fe;
+  color: #B94B72;
+  cursor: pointer;
+  border: 1px solid #B94B72;
+}
+
+.resume-btn{
+  margin-left: -30px;
+  margin-top: -20px;
+}
+
 .mycontent{
   z-index: 10;
   position: relative;
   scroll-behavior: smooth;
   background:#F3CED6;
-  /*padding: 90px 100px;*/
-  /*background: #2f041f;
-  background: #EFEFF1*/
-  /*background: linear-gradient(180deg, #742D59, #b06d96);*/
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -347,6 +360,7 @@ sec-06 : experience
 .sec-01 .container .main-title{
   font-size: 4em;
   margin-bottom: 50px;
+  color: #635a5a;
 }
 
 .sec-01 .container .content{
@@ -376,7 +390,8 @@ sec-06 : experience
 
 .sec-01 .container .content .text-box{
   z-index: 222;
-  background: pink;
+  background: #EDABC7;
+  color: #6b5b5b;
   backdrop-filter: blur(10px);
   padding: 40px;
   max-width: 600px;
@@ -387,7 +402,7 @@ sec-06 : experience
 
 .sec-01 .container .content .text-box h3{
   font-size: 2em;
-  margin-bottom: 10px;
+  margin-bottom: 2px;
 }
 
 .sec-01 .container .media-icons{
@@ -395,9 +410,12 @@ sec-06 : experience
 }
 
 .sec-01 .container .media-icons a{
-  color: #fff;
+  color: #867e7e;
   font-size: 2em;
   margin: 60px;
+}
+.sec-01 .small_header{
+  color: #292B2C;
 }
 
 .sec-01{
@@ -417,11 +435,12 @@ sec-06 : experience
 .sec-05{
   padding: 20px 80px;
   color: #fff;
-  background: #D8B2E1;
+  background: #B94B72;
 }
-.sec-05 .small_header{
-  
+.sec-05 .main-title{
+  color: #635a5a;
 }
+
 .project-infos{
   width: 1200px;
   margin-left: 50px;
@@ -435,8 +454,7 @@ sec-06 : experience
 .sec-05 .col{
   justify-content: center;
   align-items: center;
-  flex: 0 0 50%;
-  max-width: 50%;
+  
 }
 
 .sec-05 .proj-content{
@@ -458,15 +476,22 @@ sec-06 : experience
   transform: rotateZ(6deg);
 }
 
-.sec-05 .container .section-title{
+.sec-05 .container .main-title{
   font-size: 4em;
   margin-bottom: 80px;
   color: white;
+  
+}
+
+.sec-05 .small_header{
+  color: #292B2C;
 }
 
 .proj1{
   border-radius: 10px;
   transition: background 0.5s, transform 0.5s;
+  border: 3px solid #EDABC7;
+  box-shadow: -1px 8px 20px 10px rgba(0, 0, 0, 0.4);
 }
 .info-title{
   font-size: 1.8em;
@@ -484,10 +509,14 @@ sec-06 : experience
   margin-bottom: 80px;
   color: white;
 }
+.sec-04 .container .content{
+  margin: 45px 55px;
+}
 
 .sec-04{
   padding: 0 30px;
-  background: #9FE0D0;
+  background: #D678A0;
+  
 }
 .sec-04 .about-content{
   flex: 0 0 100%;
@@ -579,7 +608,7 @@ text-transform: capitalize;
   padding-bottom:70px;
 }
 .sec-04 .small_header{
-  color: white;
+  color: #292B2C;
 }
 /*=================== SKILLS SECTION ===================*/
 
@@ -597,7 +626,7 @@ text-transform: capitalize;
   scroll-behavior: smooth;
   box-sizing: border-box;
   color: #fff;
-  background:#F1C0AF;
+  background:#F2D8D5;
 }
 
 .sec-06 .container{
@@ -616,8 +645,12 @@ text-transform: capitalize;
 .sec-06 .container .section-title{
   font-size: 4em;
   margin-bottom: 80px;
-  color: white;
+  color: #635a5a;
 }
+.sec-06 .small_header{
+  color: #292B2C;
+}
+
 .about-content .education,
 .about-content .experience{
     flex: 0 0 50%;
@@ -630,12 +663,15 @@ text-transform: capitalize;
   max-width: 100%;
 }
 .timeline{
-  background-color: #EFD587;
+  background-color: #FFC0CB;
   padding: 30px 15px;
   border: 1px solid #FCC0C6;
   border-radius: 10px;
   width: 100%;
   position: relative;
+  background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
+  box-shadow: 0 0 20px rgba(48,46,77,0.15);
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 .timeline .timeline-item{
   position: relative;
@@ -700,8 +736,8 @@ text-transform: capitalize;
   padding: 80px 100px;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  color: #fff;
-  background:#99B8F3;
+  color: white;
+  background:#790E35;
 }
 
 
@@ -717,6 +753,7 @@ text-transform: capitalize;
 .sec-07 .container .main-title{
   /*font-size: 4em;*/
   margin-bottom: 50px;
+  
 }
 
 .sec-07 .section-title{
@@ -787,8 +824,25 @@ text-transform: capitalize;
   height: 140px;
 }
 .contact .contact-form .btn{
+  font-size: 16px;
+  font-weight: 500;
+  border-radius:10px;
+  display: inline-block;
+  white-space: nowrap;
+  border: none;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  background-color: #C04C68;
   height: 50px;
   padding: 0 50px;
+  color: white;
+  
+}
+.contact .contact-form .btn:hover {
+  background-color: #F3CED6;
+  color: #42051a;
+  cursor: pointer;
+  border: 3px solid white;
 }
 /*=================== CONTACT SECTION ===================*/
 
@@ -843,7 +897,7 @@ text-transform: capitalize;
 }
 
 .custom-shape-divider-top-1719308623 .shape-fill {
-  fill: #F1C0AF;
+  fill: #F2D8D5;
 }
 /*end of arrow shape divider */
 
@@ -864,7 +918,7 @@ text-transform: capitalize;
 }
 
 .custom-shape-divider-top-1719316186 .shape-fill {
-  fill: #9FE0D0;
+  fill: #D678A0;
 }
 /*end of custom triangular shape divider*/
 
@@ -885,25 +939,19 @@ text-transform: capitalize;
 }
 
 .custom-shape-divider-top-1719427290 .shape-fill {
-  fill: #D8B2E1;
+  fill: #B94B72;
 }
 /*wave opacity shape divider*/
 
 
 
 /*responsive*/
-.checkbtn{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  cursor: pointer;
-  display: none; 
-}
+
 
 #check{
   display: none;
 }
+
 
 nav ul{
   z-index: 100;
@@ -912,12 +960,40 @@ nav ul li{
   display: inline-block;
   justify-content: space-between;
   
+  
 }
 
 
+
+
+
+@media(min-width:1024px){
+
+  
+  .sec-01 .container .content .image img{
+    z-index: 111;
+    position: absolute;
+    margin-left: 250px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .sec-01 .container .content .text-box{
+    z-index: 222;
+    background: pink;
+    backdrop-filter: blur(10px);
+    padding: 40px;
+    max-width: 600px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    transform: translate(-80px, 50px);
+  }
+}
   
 
-@media(max-width: 952px){
+@media(max-width: 992px){
   .logo{
     font-size: 30px;
     padding-left: 50px;
@@ -927,10 +1003,8 @@ nav ul li{
   }
 }
 
-@media(max-width:858px){
-  .checkbtn{ 
-    display: block;
-  }
+@media(max-width:768px){
+ 
   nav ul{
     position: fixed;
     width: 100%;
@@ -960,5 +1034,77 @@ nav ul li{
   .headph_div, .control_div, .laptop_div, .coffee_div, .info, .section-1{
     display: none;
   }
+
+  .project-infos .row .col{
+    width: 100%; 
+  }
+  .project-infos .row .col .proj1{
+    width: 450px;
+  height: 300px;
+  }
+  .project-infos .row .col p{
+    width: 450px;
+  }
+  .proj-infos .row .col:nth-child(1){
+    padding-bottom: 80px;
+  }
+
+.sec-01 .text-box{
+  font-size: 0.5em;
+  padding: 3px;
+  height: 170px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transform: translate(0px,10px);
+}
 }
 
+
+
+@media(max-width:600px){
+ 
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 100;
+    background-color: red;
+    top:80px;
+    right: 240px;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  nav ul li a:hover, nav ul li a.active{
+    background: none;
+    color: #0082e6;
+  }
+  #check:checked ~ ul{
+    left:0;
+  }
+  .headph_div, .control_div, .laptop_div, .coffee_div, .info, .section-1{
+    display: none;
+  }
+
+  .project-infos .row .col{
+    width: 100%; 
+  }
+  .project-infos .row .col .proj1{
+    width: 350px;
+    height: 300px;
+  }
+  .project-infos .row .col p{
+    width: 350px;
+  }
+  .proj-infos .row .col:nth-child(1){
+    padding-bottom: 80px;
+  }
+
+}
