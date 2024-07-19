@@ -454,12 +454,12 @@ a#scroll-btn:before{
 }
 
 .project-infos{
-  width: 1200px;
+  width: 1000px;
   margin-left: 50px;
 }
 
 .sec-05 .row{
-  flex: 0 0 100%;
+  
   max-width: 100%; 
 }
 
